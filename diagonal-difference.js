@@ -11,8 +11,7 @@ function diagonalDifference(arr) {
     primaryDiagonalSum += arr[i][i];
     secondaryDiagonalSum += arr[i][n - 1 - i];
   }
-
-  console.log("output dari primaryDiagonalSum: ", primaryDiagonalSum);
+  return Math.abs(primaryDiagonalSum - secondaryDiagonalSum);
 }
 
 const matrix = [
@@ -65,5 +64,5 @@ console.log(diagonalDifference(matrix));
 //* Operasi: secondaryDiagonalSum += 10
 //* hasil dari secondaryDiagonalSum = 19 (karena 9 + 10 = 19)
 
-//* Lalu kita hitung primaryDiagonalSum + secondaryDiagonalSum
-//* Math.abs(primaryDiagonalSum + secondaryDiagonalSum)
+//* Lalu kita hitung primaryDiagonalSum - secondaryDiagonalSum
+//* Math.abs(primaryDiagonalSum - secondaryDiagonalSum)
